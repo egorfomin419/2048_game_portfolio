@@ -77,7 +77,6 @@ class Game {
     const prev = this._cloneBoard(this.state);
     const next = transform(this._cloneBoard(this.state));
 
-    // якщо нічого не змінилось — все одно перевіряємо lose
     if (this._boardsEqual(prev, next)) {
       if (!this._hasMoves()) {
         this.status = 'lose';

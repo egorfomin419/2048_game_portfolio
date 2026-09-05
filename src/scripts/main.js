@@ -2,7 +2,7 @@
 
 <script type="module" src="scripts/main.js" defer></script>;
 
-const game = new game();
+const game = new Game();
 
 const cells = document.querySelectorAll('.field-cell');
 const button = document.querySelector('.button');
@@ -78,7 +78,6 @@ button.addEventListener('click', () => {
   renderBoard();
 });
 
-// eslint-disable-next-line no-shadow
 document.addEventListener('keydown', (event) => {
   if (game.getStatus() !== 'playing') {
     return;
