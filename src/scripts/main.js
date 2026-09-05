@@ -1,6 +1,5 @@
 'use strict';
-
-<script type="module" src="scripts/main.js" defer></script>;
+import Game from '../modules/Game.class.js';
 
 const game = new Game();
 
